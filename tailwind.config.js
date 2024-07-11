@@ -8,12 +8,18 @@ export default {
     },
 
     extend: {
+      colors: {
+        brightColor: "#ffa200",
+        backgroundColor: "#b7bca9",
+        lightText: "#959595",
+      },
       fontSize: {
         huge: ['80rem', { lineHeight: '1' }],
       },
       height: {
         screen: '100dvh',
       },
+      
     },
   },
   plugins: [],
