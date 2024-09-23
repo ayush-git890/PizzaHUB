@@ -1,8 +1,11 @@
 import React from "react";
 import Button from "../layouts/Button";
+import { useNavigate } from "react-router-dom";
 // import { Link } from "react-scroll";
 
+
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat ">
       <div className=" w-full lg:w-2/3 space-y-5">
@@ -15,7 +18,9 @@ const Home = () => {
           deleniti?
         </p>
         <div className=" lg:pl-44">
-        <a href="/pizza"><Button title="Order Now" /></a>
+        <p onClick={()=>{
+          navigate('/pizza');
+        }}><Button title="Order Now" /></p>
         </div>
       </div>
     </div>
