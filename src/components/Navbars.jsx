@@ -199,7 +199,7 @@ const Navbars = () => {
             Reviews
           </Link>
 
-          <Button title="login" />
+          {/* <Button title="login" /> */}
         </div>
       </div>
     </div>
